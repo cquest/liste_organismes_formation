@@ -1,0 +1,2 @@
+cat ListeOF.csv | csvjson | jq '.[]|{name: .da_raison_sociale, id: .numero_de_da, context: (.numero_de_da + ", "+.da_siren+", "+(.da_siren+.da_no_etab)+", "+.adr_code_postal_postale[:2]), da_raison_sociale, da_siren, da_no_etab, adr_rue_physique, adr_rue_complement_physique, postcode: .adr_code_postal_physique, city: .adr_ville_physique, adr_rue_postale, adr_rue_complement_postale, adr_code_postal_postale, adr_ville_postale, lat: 0, lon: 0}' -c > liste_of.json
+
