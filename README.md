@@ -2,6 +2,8 @@
 
 **Cette API est expérimentale, mais fonctionnelle.**
 
+*La disponibilité de l'API n'est pas garantie, elle fonctionne sur un simple serveur scaleway C1.*
+
 Le moteur de recherche d'adresses "addok" est détourné de sa destination initiale pour chercher des organismes de formations d'après leur nom, numéro SIREN ou SIRET, numéro de déclaration d'activité, ville.
 
 Il permet de trouver des organismes à l'aide d'une unique zone de saisie en mode "auto-complétion".
