@@ -2,7 +2,7 @@
 
 **Cette API est expérimentale, mais fonctionnelle.**
 
-Le moteur de recherche d'adresses "addok" est détourné de son usage initial pour cherche des organismes de formations d'après leur nom, numéro SIREN ou SIRET, numéro de déclaration d'activité, ville.
+Le moteur de recherche d'adresses "addok" est détourné de sa destination initiale pour chercher des organismes de formations d'après leur nom, numéro SIREN ou SIRET, numéro de déclaration d'activité, ville.
 
 Il permet de trouver des organismes à l'aide d'une unique zone de saisie en mode "auto-complétion".
 
@@ -29,6 +29,7 @@ http 'http://of.addok.xyz/search?q=93060084406'
 
 
 La réponse est au format geojson.
+
 Les champs en "properties" sont:
 - da_raison_sociale / name : nom de l'organisme
 - id : n° de déclaration d'activité
@@ -45,3 +46,4 @@ Informations complémentaires issues du géocodage du fichier d'origine:
 - citycode : code INSEE de la commune correspondant à l'adresse géocodée
 - geo_score : score de géocodage (plus il est élevé plus fiable est le résultat)
 - geo_type : type d'adresse trouvée (housenumber = N°, street = rue, locality = lieu-dit)
+- geometry : contient la position latitude/longitude en degrés WG84 issue du géocodage ou 0,0 si rien de trouvé
